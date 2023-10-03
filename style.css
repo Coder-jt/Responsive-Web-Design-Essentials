@@ -27,7 +27,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px 20px;
+  border-bottom: 2px solid lightslategray;
 }
 main {
   min-height: 300px;
@@ -112,5 +113,4 @@ p {
   display: inline-block;
   margin-top: 20px;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px turquoise;
 }
