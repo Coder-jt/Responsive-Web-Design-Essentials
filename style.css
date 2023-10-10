@@ -1,9 +1,11 @@
 html {
   background-image: linear-gradient(#ff8b07, #ff2525);
-  background-repeat: no-repeat;
 }
 
 body {
+  background-image: url(/img/image-lion-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: Roboto;
   color: white;
   font-size: 1.125rem;
@@ -35,6 +37,11 @@ main {
   display: flex;
   align-items: center;
 }
+.main2{
+  min-height: 300px;
+  padding-top: 50px;
+}
+
 .cards {
   display: flex;
   justify-content: space-between;
@@ -115,6 +122,19 @@ p {
   border-radius: 5px;
 }
 
+.mybutton:hover {
+  background-color: #ff2525;
+  color: white;
+  transition-duration: 1s;
+}
+.navbutton {
+  font-family: "Playfair Display", sans-serif;
+  padding: 11px 25px;
+  border: 1px solid white;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
 .testimonials {
   display: flex;
   flex-wrap: wrap;
@@ -128,4 +148,36 @@ p {
   border: 1px solid white;
   box-sizing: border-box;
   margin-top: 50px;
+}
+
+/* .tbox :last-child {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: aqua;
+} */
+
+/* .tbox p:last-of-type {
+  padding-left: 150px;
+} */
+
+.dropdownbox {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.navbutton:hover .dropdownbox {
+  display: block;
+}
+
+.dropdownbox .navbutton {
+  width: 120px;
+  background-color: white;
+}
+.dropdownbox .navbutton a {
+  color: #ff2525;
+}
+.dropdownbox .navbutton:hover {
+  background-color: #e625ff;
 }

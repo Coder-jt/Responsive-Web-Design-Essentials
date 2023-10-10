@@ -1,0 +1,33 @@
+body {
+  color: white;
+}
+a {
+  color: white;
+}
+
+.navbutton {
+  background-color: rgb(43, 168, 226);
+  padding: 11px 25px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+
+/* this turns the dropdown off when no in use */
+.dropdownbox {
+  display: none;
+  position: absolute;
+}
+
+/* this turns the dropdown off when no in use */
+.navbutton:hover .dropdownbox {
+  display: block;
+  margin-top: 10px;
+}
+
+.dropdownbox .navbutton {
+  color: white;
+  background-color: slategrey;
+}
